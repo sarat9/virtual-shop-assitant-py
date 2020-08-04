@@ -1,0 +1,228 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.MuiGrid-container {
+    width: inherit;
+}
+
+.space-pad{
+    margin-left:8%;
+    margin-right:8%;
+}
+
+.fixed-anim-char {
+    position: fixed;
+    width: 300px;
+    height: 250px;
+    z-index: 1500;
+    right: 0px;
+    bottom: 0px;
+    border: 0px;
+}
+
+@keyframes updown {
+    0% {
+      transform: translateY(-2%);
+    }
+  
+    50% {
+      transform: translateY(2%);
+    }
+  
+    100% {
+      transform: translateY(-2%);
+    }
+  }
+
+.flying-transition{
+    animation: updown 2s ease-in-out infinite;
+    transform: translate(0,0);
+    /* transition: all 5s ease-in-out; */
+    position: fixed;
+    width: 400px;
+    height: 500px;
+    z-index: 1500;
+    right: 0px;
+    bottom: 0px;
+    border: 0px;
+}
+
+@keyframes upstarter {
+    0% {
+      transform: translateY(50%);
+    }
+  
+    100% {
+      transform: translateY(10%);
+    }
+  }
+
+.flying-transition-starter{
+    animation: upstarter 1s ease-in;
+    /* transform: translate(0,0); */
+    /* transition: all 5s ease-in-out; */
+    position: fixed;
+    width: 400px;
+    height: 500px;
+    z-index: 1500;
+    right: 0px;
+    bottom: 0px;
+    border: 0px;
+}
+
+
+
+/* .flying-transition:hover{
+    transform: translate(-250px,0);
+    transition: all 2s ease-in-out;
+    position: fixed;
+    width: 300px;
+    height: 500px;
+    z-index: 120;
+    right: 0px;
+    bottom: 0px;
+    border: 0px;
+} */
+
+.border-set{
+    position: relative;
+    border-bottom: 0.0625rem solid rgb(229, 229, 229);
+}
+
+.header-div{
+    height: 70px;
+    width: 100%;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+    background: rgb(255, 255, 255);
+    border-bottom: 0.0625rem solid rgb(229, 229, 229);
+}
+
+.header-div .locationinfo {
+    padding: 0px 13px
+}
+
+.header-div .locationinfo .selected-store{
+    display: flex;
+    color: rgb(0, 65, 194);
+    font-size: 0.875rem;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 215px;
+    text-decoration-line:none;
+}
+
+.header-div .locationinfo .selected-store .locationWrapper{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0px 0.25rem;
+    font-weight:700;
+}
+
+.header-div .locationinfo .selected-store .arrow-right{
+    height: 14px;
+    padding-left: 15px;
+}
+
+.header-div .store-time{
+    color: rgb(0, 0, 0);
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding: 0px 0px 0px 16px;
+}
+
+.header-div .search-bar-div{
+    display: block;
+    text-align: -webkit-right;
+}
+
+.header-div .search-bar{
+  height: 50px;
+  width: 70%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.header-div .search-bar:focus {
+  width: 80%;
+}
+
+
+.menu-wrap-div{
+    height: 45px;
+}
+
+.menu-wrap{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    max-width: 1032px;
+    margin: 0px auto;
+}
+
+.menu-wrap .mcontainer{
+    display: flex;
+    padding-left: 1.25rem;
+    list-style: none;
+}
+
+.menu-wrap .mcontainer .mitems{
+    background-color: rgb(255,255,255);
+    padding: 0;
+    position: relative;
+    margin-right: 2.75rem;
+    border-bottom: 0.125rem solid transparent;
+}
+
+.menu-wrap .mcontainer .mitems:hover{
+    border-bottom: #08089a solid 2px;
+}
+
+.menu-wrap .mcontainer .mitems .mitem-text{
+    font-size: 1rem;
+    font-family: Helvetica,sans-serif;
+    font-weight: 700;
+    border-bottom: 0.125rem solid transparent;
+    margin-bottom: 6px;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.menu-wrap-secondary{
+    font-size: 0.875rem;
+    margin: 0.75rem 0.5rem 0.5rem;
+}
+
+.menu-wrap-secondary span{
+    margin: 0px 0.5rem;
+}
+
+.menu-wrap-secondary .item{
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(0, 65, 194);
+}
+
+
+.pick-up-image-div .pick-up-image{
+    width: 1070px;
+    display: block;
+    align-items: center;
+    margin: 0px auto;
+}
+
