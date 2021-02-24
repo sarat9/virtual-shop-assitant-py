@@ -2,6 +2,7 @@
 
 # Virtual Shop Assitant py
 ##### Voice and Image based search and navigation prototype assisted by generated Bots to shop with Friends together
+##### One Day Hackathon
 
 ### Feature Ideas
 
@@ -21,3 +22,6 @@ Picture based search using the Convoluted neural networks.
 Ideation feature to enable friends to shop together virtually.
 
 ##### Technology: React, Python
+
+
+##### Feel Free to Contribute
