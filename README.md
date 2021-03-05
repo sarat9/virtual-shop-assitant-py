@@ -2,7 +2,7 @@
 
 # Virtual Shop Assitant py
 ##### Voice and Image based search and navigation prototype assisted by generated Bots to shop with Friends together
-##### One Day Hackathon
+#### One Day Hackathon Event Project
 
 ### Feature Ideas
 
